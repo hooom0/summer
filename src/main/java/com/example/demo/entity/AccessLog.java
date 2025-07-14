@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 public class AccessLog {
 
     @ManyToOne
-    @JoinColumn(name = "device_id")
+    @JoinColumn(name = "device_id")  // 数据库外键列名
     @Schema(description = "通行设备信息")
     private AccessDevice device;
 

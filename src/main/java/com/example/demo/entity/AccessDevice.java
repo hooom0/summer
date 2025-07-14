@@ -49,8 +49,9 @@ public class AccessDevice {
     @Schema(description = "备注信息", example = "2023年新安装的设备")
     private String remark;
 
-    @OneToMany(mappedBy = "AccessDevice",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "device",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @Schema(description = "通过数据")
+
     private List<AccessLog> accessLogs;
 
 }
